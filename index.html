@@ -1,8 +1,161 @@
-<html>
-	<title>这是一个测试页面</title>
-	<body>
-		<h1>
-			这是一个测试页面
-		</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI图像创作实验室</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="#" class="logo"><i class="fas fa-brain"></i> AI创想空间</a>
+            <div class="nav-links">
+                <a href="#" class="active">图像生成</a>
+                <a href="#">我的作品</a>
+                <a href="#">使用教程</a>
+                <a href="#">关于我们</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="prompt-section">
+            <div class="prompt-container">
+                <h2>创作提示词</h2>
+                <textarea 
+                    class="prompt-input" 
+                    placeholder="描述你想创建的图像，例如：'一只在星空下弹钢琴的机器猫'"
+                ></textarea>
+                <button class="generate-btn">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    开始生成
+                </button>
+            </div>
+        </section>
+
+        <section class="generation-status">
+            <h3>正在生成</h3>
+            <div class="generating-grid">
+                <div class="generating-card">
+                    <div class="loading-animation"></div>
+                    <p>正在创作中...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3>已生成作品</h3>
+            <div class="gallery-grid">
+                <div class="image-card">
+                    <img src="https://picsum.photos/400/400" alt="AI生成图片">
+                    <div class="image-info">
+                        <p class="prompt-text">星空下的机器猫</p>
+                        <div class="image-actions">
+                            <button class="action-btn"><i class="fas fa-download"></i> 下载</button>
+                            <button class="action-btn"><i class="fas fa-share-alt"></i> 分享</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多图片卡片 -->
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h3>常见问题</h3>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>如何创建更好的提示词？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>创建好的提示词建议：</p>
+                        <ul>
+                            <li>使用具体和详细的描述</li>
+                            <li>包含场景、风格、光线等细节</li>
+                            <li>可以参考艺术家或特定艺术风格</li>
+                            <li>避免模糊或过于简单的描述</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>生成的图片可以商用吗？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>生成的图片版权规则如下：</p>
+                        <ul>
+                            <li>个人用途完全免费</li>
+                            <li>商业用途需要获得授权</li>
+                            <li>详细规则请查看用户协议</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>为什么生成失败了？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>常见的失败原因包括：</p>
+                        <ul>
+                            <li>网络连接不稳定</li>
+                            <li>服务器负载过高</li>
+                            <li>提示词包含敏感内容</li>
+                            <li>系统正在维护</li>
+                        </ul>
+                        <p>建议稍后重试或联系客服支持。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>如何获得更高的生成额度？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>提升生成额度的方式：</p>
+                        <ul>
+                            <li>升级到专业版账户</li>
+                            <li>参与社区活动获得奖励</li>
+                            <li>邀请好友注册</li>
+                            <li>关注官方活动获得福利</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AI创想空间</h4>
+                <p>让创意触手可及</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系我们</h4>
+                <p>support@aicreative.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AI创想空间. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
